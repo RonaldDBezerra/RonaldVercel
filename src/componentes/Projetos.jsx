@@ -1,11 +1,11 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 
 function Projetos () {
 return (
     <section id="content-project">
 <section id="project-link" className="project">
-    <a id="pixel-art" href="../projetos/pixels-art">
-    </a>
+    <Link id="pixel-art" to='/starWars'></Link>
     <div>
         <p>Projeto paleta de cores… Foi o primeiro projeto que eu fiz, ele todo foi feito com HTML, CSS, e Js. Fique à vontade para testar e se divertir!!!</p>
     </div>
