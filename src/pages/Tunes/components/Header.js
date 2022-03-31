@@ -1,17 +1,21 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Navigate, Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import {  Link } from "react-router-dom";
 import { getUser } from '../services/userAPI';
 
 function Header() {
   
-  const [stateCarregando, setStateCarregando] = useState('true');
+  const [stateCarregando, setStateCarregando] = useState(true);
   const [stateName, setStateName] = useState('')
 
   useEffect(() => {
+
+    const getUsers = async () => {
+      const infoUsuario =  await getUser() 
+      setStateName(infoUsuario.name)
+      setStateCarregando(false)
+    }
     
-    getUser().then((elm) => setStateName(elm.name))
-    
-    setStateCarregando(false)
+    getUsers()
 
 
   }, [])
