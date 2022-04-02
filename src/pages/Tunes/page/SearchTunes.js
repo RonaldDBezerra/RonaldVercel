@@ -1,7 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { createUser } from '../services/userAPI';
-import context from '../../../context/context';
-import { Link, Navigate } from "react-router-dom";
+import React, {useState } from 'react';
+import { Link } from "react-router-dom";
 import Header from '../components/Header';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 
