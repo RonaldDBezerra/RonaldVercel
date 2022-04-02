@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { createUser } from '../services/userAPI';
 import context from '../../../context/context';
 import { Navigate } from "react-router-dom";
@@ -60,6 +60,7 @@ function LoginTunes () {
 
                 <input
                   type="text"
+                  placeholder='Quem está ouvindo musica?'
                   value={ stateLogin }
                   onChange={ (event) => handleChange(event, setStateLogin) }
                   name="login"
