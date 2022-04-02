@@ -22,15 +22,15 @@ function Header() {
 
 return (
   <header data-testid="header-component">
-    <Link  to="/search" data-testid="link-to-search">
+    <Link  to="/tunes/search" data-testid="link-to-search">
       Pesquisa
     </Link >
 
-    <Link  to="/favorites" data-testid="link-to-favorites">
+    <Link  to="/tunes/favorites" data-testid="link-to-favorites">
       Favorito
     </Link >
 
-    <Link  to="/profile" data-testid="link-to-profile">
+    <Link  to="/tunes/profile" data-testid="link-to-profile">
       Meu perfil
     </Link >
     {
